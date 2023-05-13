@@ -193,13 +193,31 @@ body {
 }
 .supercharge__grid {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
 }
 .supercharge__gridItem {
+  display: grid;
+  grid-template-rows: 5rem 10rem;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  max-width: 35rem;
+}
+.supercharge__gridContent {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 35rem;
+  justify-content: space-between;
+}
+.supercharge__gridContent h3 {
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.supercharge__gridContent p {
+  font-size: 1.6rem;
+  color: hsl(201, 11%, 66%);
 }
 
 /*# sourceMappingURL=main.css.map */
