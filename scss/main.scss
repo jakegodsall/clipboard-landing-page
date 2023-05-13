@@ -1,7 +1,10 @@
-@forward 'abstracts';
-@forward 'base';
-@forward 'components';
-@forward 'layout';
-@forward 'pages';
-@forward 'themes';
-@forward 'vendors';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/button';
+
+@import 'layout/hero';

@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 1rem 3rem;
+    transition: transform 0.2s ease-out;
+
+    &:link,
+    &:visited {
+        font-size: 1.8rem;
+        text-decoration: none;
+        color: $color-font-white;
+        letter-spacing: 0.5px;
+    }
+
+    &:active {
+        transform: translateY(5px);
+    }
+
+    &--green {
+        background-color: $color-button-green;
+        border-bottom: 3px solid darken($color-button-green, 10%);
+        box-shadow: 0 1rem 2rem 0rem rgba($color-button-green, 0.3);
+    }
+
+    &--blue {
+        background-color: $color-button-blue;
+        border-bottom: 3px solid darken($color-button-blue, 10%);
+        box-shadow: 0 1rem 2rem 0rem rgba($color-button-blue, 0.3);
+    }
+}
