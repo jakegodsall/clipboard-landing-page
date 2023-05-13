@@ -110,11 +110,11 @@ body {
 }
 
 .hero {
-  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 80vh;
+  justify-content: center;
   text-align: center;
   gap: 3rem;
   padding: 10rem 0;

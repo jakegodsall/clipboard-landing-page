@@ -1,7 +1,5 @@
 .supercharge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox-center;
 
     &__grid {
         display: grid;

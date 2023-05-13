@@ -1,9 +1,7 @@
 .hero {
+    @include flexbox-center;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     gap: 3rem;
     padding: 10rem 0;

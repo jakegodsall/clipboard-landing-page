@@ -1,7 +1,5 @@
 .snippets {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flexbox-center;
 
     &__grid {
         width: 100vw;
