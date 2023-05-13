@@ -86,13 +86,14 @@ body {
 }
 
 .hero {
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   gap: 3rem;
-  height: 80vh;
+  padding: 10rem 0;
   background-image: url("../../assets/bg-header-desktop.png");
   background-size: cover;
   background-position: center;
@@ -122,6 +123,56 @@ body {
   margin-top: 2rem;
   animation-name: slideFromBottom;
   animation-duration: 2s;
+}
+
+.snippets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.snippets__header {
+  text-align: center;
+  max-width: 73rem;
+  margin-bottom: 5rem;
+}
+.snippets__header h2 {
+  font-size: 3.6rem;
+}
+.snippets__header p {
+  font-size: 1.8rem;
+  color: hsl(201, 11%, 66%);
+  margin: 2rem;
+}
+.snippets__grid {
+  width: 100vw;
+  height: 58rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+}
+.snippets__image {
+  position: absolute;
+  left: -32px;
+  width: 75rem;
+  height: 57.2rem;
+}
+.snippets__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10rem;
+  gap: 5rem;
+}
+.snippets__item {
+  max-width: 35rem;
+}
+.snippets__item h3 {
+  font-size: 2.4rem;
+}
+.snippets__item p {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  color: hsl(201, 11%, 66%);
 }
 
 /*# sourceMappingURL=main.css.map */

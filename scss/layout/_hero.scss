@@ -1,12 +1,12 @@
 .hero {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 3rem;
-
-    height: 80vh;
+    padding: 10rem 0;
 
     background-image: url('../../assets/bg-header-desktop.png');
     background-size: cover;
