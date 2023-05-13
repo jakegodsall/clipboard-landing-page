@@ -1,0 +1,11 @@
+.clipboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 10rem;
+
+    &__image {
+        width: 81rem;
+    }
+}

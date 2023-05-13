@@ -85,6 +85,30 @@ body {
   box-shadow: 0 1rem 2rem 0rem rgba(97, 115, 255, 0.3);
 }
 
+.textbox {
+  text-align: center;
+  max-width: 73rem;
+  margin-bottom: 5rem;
+}
+.textbox h2 {
+  font-size: 3.6rem;
+}
+.textbox p {
+  font-size: 1.8rem;
+  color: hsl(201, 11%, 66%);
+  margin: 2rem;
+}
+
+.clipboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+.clipboard__image {
+  width: 81rem;
+}
+
 .hero {
   height: 80vh;
   display: flex;
@@ -130,19 +154,6 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.snippets__header {
-  text-align: center;
-  max-width: 73rem;
-  margin-bottom: 5rem;
-}
-.snippets__header h2 {
-  font-size: 3.6rem;
-}
-.snippets__header p {
-  font-size: 1.8rem;
-  color: hsl(201, 11%, 66%);
-  margin: 2rem;
-}
 .snippets__grid {
   width: 100vw;
   height: 58rem;
@@ -173,6 +184,22 @@ body {
   margin-top: 1rem;
   font-size: 1.6rem;
   color: hsl(201, 11%, 66%);
+}
+
+.supercharge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.supercharge__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.supercharge__gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 35rem;
 }
 
 /*# sourceMappingURL=main.css.map */
