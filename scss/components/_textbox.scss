@@ -12,4 +12,10 @@
         color: $color-font-secondary;
         margin: 2rem;
     }
+
+    &--animate-up {
+        animation-name: slideFromBottom;
+        animation-duration: 2s;
+        animation-fill-mode: backwards;
+    }
 }
