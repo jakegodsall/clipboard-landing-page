@@ -1,6 +1,8 @@
 .download {
     @include flexbox-center;
 
+    margin-bottom: 15rem;
+
     &__buttons {
         display: flex;
         gap: 2rem;
