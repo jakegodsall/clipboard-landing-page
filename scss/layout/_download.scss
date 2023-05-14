@@ -1,0 +1,9 @@
+.download {
+    @include flexbox-center;
+    margin-top: 10rem;
+
+    &__buttons {
+        display: flex;
+        gap: 2rem;
+    }
+}
