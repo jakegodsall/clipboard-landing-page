@@ -178,10 +178,31 @@ body {
 }
 .snippets__grid {
   width: 100vw;
-  height: 58rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+}
+@media only screen and (max-width: 900px) {
+  .snippets__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto, 1fr;
+    gap: 5rem;
+  }
+}
+.snippets__imageContainer {
+  height: 57.2rem;
+}
+@media only screen and (max-width: 1350px) {
+  .snippets__imageContainer {
+    height: 42vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .snippets__imageContainer {
+    display: flex;
+    justify-content: center;
+    min-height: 23.8rem;
+  }
 }
 .snippets__image {
   position: absolute;
@@ -189,12 +210,32 @@ body {
   width: 75rem;
   height: 57.2rem;
 }
+@media only screen and (max-width: 1350px) {
+  .snippets__image {
+    width: 55vw;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .snippets__image {
+    position: static;
+    min-width: 31.2rem;
+    min-height: 23.8rem;
+  }
+}
 .snippets__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10rem;
   gap: 5rem;
+}
+@media only screen and (max-width: 900px) {
+  .snippets__list {
+    margin-left: 0;
+    align-items: center;
+    text-align: center;
+  }
 }
 .snippets__item {
   max-width: 35rem;
@@ -206,6 +247,11 @@ body {
   margin-top: 1rem;
   font-size: 1.6rem;
   color: hsl(201, 11%, 66%);
+}
+@media only screen and (max-width: 900px) {
+  .snippets__item {
+    max-width: 31rem;
+  }
 }
 
 .supercharge {

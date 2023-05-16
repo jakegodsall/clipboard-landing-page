@@ -3,10 +3,29 @@
 
     &__grid {
         width: 100vw;
-        height: 58rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+
+        @media only screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto, 1fr;
+            gap: 5rem;
+        }
+    }
+
+    &__imageContainer {
+        height: 57.2rem;
+
+        @media only screen and (max-width: 1350px) {
+            height: 42vw;
+        }
+
+        @media only screen and (max-width: 900px) {
+            display: flex;
+            justify-content: center;
+            min-height: 23.8rem;
+        }
     }
 
     &__image {
@@ -14,6 +33,17 @@
         left: -32px;
         width: 75rem;
         height: 57.2rem;
+
+        @media only screen and (max-width: 1350px) {
+            width: 55vw;
+            height: auto;
+        }
+
+        @media only screen and (max-width: 900px) {
+            position: static;
+            min-width: 31.2rem;
+            min-height: 23.8rem;
+        }
     }
 
     &__list {
@@ -22,6 +52,12 @@
         justify-content: center;
         margin-left: 10rem;
         gap: 5rem;
+
+        @media only screen and (max-width: 900px) {
+            margin-left: 0;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__item {
@@ -35,6 +71,10 @@
             margin-top: 1rem;
             font-size: 1.6rem;
             color: $color-font-secondary;
+        }
+
+        @media only screen and (max-width: 900px) {
+            max-width: 31rem;
         }
     }
 }
