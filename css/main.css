@@ -93,15 +93,30 @@ body {
 .textbox h2 {
   font-size: 3.6rem;
 }
+@media only screen and (max-width: 900px) {
+  .textbox h2 {
+    font-size: 2.8rem;
+  }
+}
 .textbox p {
   font-size: 1.8rem;
   color: hsl(201, 11%, 66%);
   margin: 2rem;
 }
+@media only screen and (max-width: 900px) {
+  .textbox p {
+    margin-inline: 0;
+  }
+}
 .textbox--animate-up {
   animation-name: slideFromBottom;
   animation-duration: 2s;
   animation-fill-mode: backwards;
+}
+@media only screen and (max-width: 900px) {
+  .textbox {
+    max-width: 31.1rem;
+  }
 }
 
 .brands {
@@ -118,6 +133,17 @@ body {
 }
 .clipboard__image {
   width: 81rem;
+}
+@media only screen and (max-width: 900px) {
+  .clipboard__image {
+    width: 85vw;
+    min-width: 31.1rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .clipboard {
+    margin-bottom: min(13rem, 700px - 100vw);
+  }
 }
 
 .download {

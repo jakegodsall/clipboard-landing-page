@@ -4,5 +4,14 @@
 
     &__image {
         width: 81rem;
+
+        @media only screen and (max-width: 900px) {
+            width: 85vw;
+            min-width: 31.1rem;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        margin-bottom: min(13rem, calc(700px - 100vw));
     }
 }
