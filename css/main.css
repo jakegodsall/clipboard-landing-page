@@ -122,8 +122,10 @@ body {
 
 .brands {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
   margin: 15rem 5rem;
 }
 .clipboard {
