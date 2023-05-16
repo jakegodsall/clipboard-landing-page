@@ -1,5 +1,7 @@
+@use '../abstracts/' as a;
+
 .supercharge {
-    @include flexbox-center;
+    @include a.flexbox-center;
 
     &__flexContainer {
         display: flex;
@@ -26,7 +28,7 @@
 
         @media only screen and (max-width: 900px) {
             width: 50vw;
-            min-width: $min-width;
+            min-width: a.$min-width;
         }
     }
 
@@ -52,7 +54,7 @@
 
         p {
             font-size: 1.6rem;
-            color: $color-font-secondary;
+            color: a.$color-font-secondary;
         }
     }
 }

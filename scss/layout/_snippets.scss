@@ -1,5 +1,7 @@
+@use '../abstracts' as a;
+
 .snippets {
-    @include flexbox-center;
+    @include a.flexbox-center;
 
     &__grid {
         width: 100vw;
@@ -43,7 +45,7 @@
 
         @media only screen and (max-width: 900px) {
             position: static;
-            min-width: $min-width;
+            min-width: a.$min-width;
             min-height: 23.8rem;
         }
     }
@@ -72,12 +74,12 @@
         p {
             margin-top: 1rem;
             font-size: 1.6rem;
-            color: $color-font-secondary;
+            color: a.$color-font-secondary;
         }
 
         @media only screen and (max-width: 900px) {
             width: 50vw;
-            min-width: $min-width;
+            min-width: a.$min-width;
         }
     }
 }

@@ -1,5 +1,7 @@
+@use '../abstracts' as a;
+
 .clipboard {
-    @include flexbox-center;
+    @include a.flexbox-center;
     margin-top: 10rem;
 
     &__image {
@@ -7,7 +9,7 @@
 
         @media only screen and (max-width: 900px) {
             width: 85vw;
-            min-width: $min-width;
+            min-width: a.$min-width;
         }
     }
 

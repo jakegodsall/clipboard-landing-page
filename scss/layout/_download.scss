@@ -1,5 +1,7 @@
+@use '../abstracts' as a;
+
 .download {
-    @include flexbox-center;
+    @include a.flexbox-center;
 
     margin-bottom: 15rem;
 

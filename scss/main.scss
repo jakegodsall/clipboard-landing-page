@@ -1,17 +1,3 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
-
-@import 'base/animations';
-@import 'base/base';
-@import 'base/typography';
-
-@import 'components/button';
-@import 'components/textbox';
-
-@import 'layout/brands';
-@import 'layout/clipboard';
-@import 'layout/download';
-@import 'layout/hero';
-@import 'layout/snippets';
-@import 'layout/supercharge';
-@import 'layout/footer';
+@forward 'base';
+@forward 'components';
+@forward 'layout';

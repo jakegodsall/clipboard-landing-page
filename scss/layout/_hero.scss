@@ -1,5 +1,7 @@
+@use '../abstracts' as a;
+
 .hero {
-    @include flexbox-center;
+    @include a.flexbox-center;
     height: 80vh;
     justify-content: center;
     text-align: center;
@@ -29,7 +31,7 @@
 
     &__description {
         font-size: 2rem;
-        color: $color-font-secondary;
+        color: a.$color-font-secondary;
 
         animation-name: slideFromRight;
         animation-duration: 2s;

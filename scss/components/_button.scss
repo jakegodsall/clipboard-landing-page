@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 .btn {
     display: inline-block;
     border-radius: 100px;
@@ -8,7 +10,7 @@
     &:visited {
         font-size: 1.8rem;
         text-decoration: none;
-        color: $color-font-white;
+        color: a.$color-font-white;
         letter-spacing: 0.5px;
     }
 
@@ -17,20 +19,20 @@
     }
 
     &--green {
-        background-color: $color-button-green;
-        border-bottom: 3px solid darken($color-button-green, 10%);
-        box-shadow: 0 1rem 2rem 0rem rgba($color-button-green, 0.3);
+        background-color: a.$color-button-green;
+        border-bottom: 3px solid darken(a.$color-button-green, 10%);
+        box-shadow: 0 1rem 2rem 0rem rgba(a.$color-button-green, 0.3);
     }
 
     &--blue {
-        background-color: $color-button-blue;
-        border-bottom: 3px solid darken($color-button-blue, 10%);
-        box-shadow: 0 1rem 2rem 0rem rgba($color-button-blue, 0.3);
+        background-color: a.$color-button-blue;
+        border-bottom: 3px solid darken(a.$color-button-blue, 10%);
+        box-shadow: 0 1rem 2rem 0rem rgba(a.$color-button-blue, 0.3);
     }
 
     @media only screen and (max-width: 500px) {
         width: 80vw;
-        min-width: $min-width;
+        min-width: a.$min-width;
         text-align: center;
     }
 }
