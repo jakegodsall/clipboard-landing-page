@@ -27,4 +27,10 @@
         border-bottom: 3px solid darken($color-button-blue, 10%);
         box-shadow: 0 1rem 2rem 0rem rgba($color-button-blue, 0.3);
     }
+
+    @media only screen and (max-width: 500px) {
+        width: 80vw;
+        min-width: $min-width;
+        text-align: center;
+    }
 }
