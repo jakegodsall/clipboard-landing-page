@@ -63,7 +63,7 @@
     }
 
     &__item {
-        max-width: 35rem;
+        width: 35rem;
 
         h3 {
             font-size: 2.4rem;
@@ -76,7 +76,8 @@
         }
 
         @media only screen and (max-width: 900px) {
-            max-width: 31rem;
+            width: 50vw;
+            min-width: 31rem;
         }
     }
 }

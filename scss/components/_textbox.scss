@@ -27,7 +27,8 @@
         animation-fill-mode: backwards;
     }
 
-    @media only screen and (max-width: 900px) {
-        max-width: 31.1rem;
+    @media only screen and (max-width: 800px) {
+        width: 80vw;
+        min-width: 31.1rem;
     }
 }

@@ -113,9 +113,10 @@ body {
   animation-duration: 2s;
   animation-fill-mode: backwards;
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .textbox {
-    max-width: 31.1rem;
+    width: 80vw;
+    min-width: 31.1rem;
   }
 }
 
@@ -265,7 +266,7 @@ body {
   }
 }
 .snippets__item {
-  max-width: 35rem;
+  width: 35rem;
 }
 .snippets__item h3 {
   font-size: 2.4rem;
@@ -277,7 +278,8 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .snippets__item {
-    max-width: 31rem;
+    width: 50vw;
+    min-width: 31rem;
   }
 }
 
@@ -291,6 +293,13 @@ body {
   flex-direction: row;
   gap: 2rem;
 }
+@media only screen and (max-width: 900px) {
+  .supercharge__flexContainer {
+    flex-direction: column;
+    gap: 5rem;
+    margin-top: 9rem;
+  }
+}
 .supercharge__flexItem {
   display: flex;
   flex-direction: column;
@@ -298,10 +307,21 @@ body {
   grid-template-columns: 1fr;
   align-items: center;
   text-align: center;
-  max-width: 35rem;
+  width: 35rem;
+}
+@media only screen and (max-width: 900px) {
+  .supercharge__flexItem {
+    width: 50vw;
+    min-width: 31.1rem;
+  }
 }
 .supercharge__icon-container {
   height: 4.5rem;
+}
+@media only screen and (max-width: 900px) {
+  .supercharge__icon-container {
+    height: 4rem;
+  }
 }
 .supercharge__flexContent {
   display: flex;
