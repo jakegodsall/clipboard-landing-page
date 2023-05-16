@@ -4,10 +4,12 @@
     &__flexContainer {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
         gap: 2rem;
 
-        @media only screen and (max-width: 900px) {
-            flex-direction: column;
+        @media only screen and (max-width: 300px) {
             gap: 5rem;
             margin-top: 9rem;
         }
