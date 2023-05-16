@@ -187,6 +187,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto, 1fr;
     gap: 5rem;
+    margin-bottom: min(18rem, 900px - 100vw);
   }
 }
 .snippets__imageContainer {
