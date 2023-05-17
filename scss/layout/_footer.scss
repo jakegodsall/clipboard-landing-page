@@ -3,6 +3,7 @@
 .footer {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100vw;
 
     background-color: a.$color-background-grey;
@@ -20,6 +21,15 @@
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 1.5rem 6rem;
+
+            @media only screen and (max-width: 1000px) {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(6, 1fr);
+            }
+
+            @media only screen and (max-width: 500px) {
+                text-align: center;
+            }
         }
 
         li {
@@ -32,11 +42,29 @@
             font-size: 1.8rem;
             color: a.$color-font-primary;
         }
+
+        @media only screen and (max-width: 1000px) {
+            margin-left: 0;
+        }
     }
 
     &__socials {
         margin-left: auto;
         display: flex;
         gap: 2rem;
+
+        @media only screen and (max-width: 1000px) {
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        padding-inline: 0;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+        flex-direction: column;
     }
 }
