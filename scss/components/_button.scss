@@ -30,7 +30,7 @@
         box-shadow: 0 1rem 2rem 0rem rgba(a.$color-button-blue, 0.3);
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 575px) {
         width: 80vw;
         min-width: a.$min-width;
         text-align: center;

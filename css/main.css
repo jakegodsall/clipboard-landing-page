@@ -84,7 +84,7 @@ body {
   border-bottom: 3px solid #2e46ff;
   box-shadow: 0 1rem 2rem 0rem rgba(97, 115, 255, 0.3);
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 575px) {
   .btn {
     width: 80vw;
     min-width: 31.1rem;
@@ -255,10 +255,21 @@ body {
   background-repeat: no-repeat;
 }
 .hero__logo {
-  width: 10rem;
+  width: 12.5rem;
 }
 .hero__textbox {
   max-width: 730px;
+}
+@media only screen and (max-width: 900px) {
+  .hero__textbox {
+    margin: 3.2rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .hero__textbox {
+    width: 80vw;
+    min-width: 31.1rem;
+  }
 }
 .hero__title {
   font-size: 4.6rem;
@@ -266,11 +277,21 @@ body {
   animation-name: slideFromLeft;
   animation-duration: 2s;
 }
+@media only screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 3.2rem;
+  }
+}
 .hero__description {
   font-size: 2rem;
   color: hsl(201, 11%, 66%);
   animation-name: slideFromRight;
   animation-duration: 2s;
+}
+@media only screen and (max-width: 400px) {
+  .hero__description {
+    font-size: 1.6rem;
+  }
 }
 .hero__buttons {
   display: flex;
@@ -278,6 +299,11 @@ body {
   margin-top: 2rem;
   animation-name: slideFromBottom;
   animation-duration: 2s;
+}
+@media only screen and (max-width: 575px) {
+  .hero__buttons {
+    flex-direction: column;
+  }
 }
 
 .snippets {
