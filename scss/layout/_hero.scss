@@ -2,7 +2,7 @@
 
 .hero {
     @include a.flexbox-center;
-    height: 80vh;
+    height: 80rem;
     justify-content: center;
     text-align: center;
     gap: 3rem;
