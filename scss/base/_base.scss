@@ -1,3 +1,5 @@
+@use '../abstracts/' as a;
+
 *,
 *::after,
 *::before {
@@ -12,4 +14,5 @@ html {
 
 body {
     box-sizing: border-box;
+    background-color: rgba(a.$color-font-secondary, 0.1);
 }

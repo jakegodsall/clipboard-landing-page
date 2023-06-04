@@ -30,6 +30,10 @@
             justify-content: center;
             min-height: 23.8rem;
         }
+
+        @media only screen and (min-width: 1450px) {
+            position: relative;
+        }
     }
 
     &__image {
@@ -47,6 +51,11 @@
             position: static;
             min-width: a.$min-width;
             min-height: 23.8rem;
+        }
+
+        @media only screen and (min-width: 1450px) {
+            right: -2vw;
+            left: auto;
         }
     }
 
